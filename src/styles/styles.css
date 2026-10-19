@@ -12,14 +12,14 @@ body {
 
 :root {
     /* Colores */
-    --color-primary: #AACCD6;
-    --color-secondary: #112E81;
-    --color-accent: #4647AE;
-    --color-text: #fffffc;
-    --color-text-light: #6b7280;
-    --color-bg: #dce0ee;
-    --color-bg-alt: #4382DF;
-    --color-border: #e5e7eb;
+     --color-primary: #7C3AED;
+    --color-secondary: #191923;
+    --color-accent: #A78BFA;
+    --color-text: #F5F5F5;
+    --color-text-light: #B8B5C7;
+    --color-bg: #101014;
+    --color-bg-alt: #252039;
+    --color-border: #373344;
 
     /* Tipografía */
     --font-primary: 'Inter', sans-serif;
@@ -729,4 +729,189 @@ a {
   .contact-form-card {
     padding: 1.2rem;
   }
+}
+
+
+/* ========================================
+   AJUSTES DE TEXTO Y CONTRASTE
+   ======================================== */
+
+/* Color de texto predeterminado */
+body {
+  color: var(--color-text);
+}
+
+/* Inicio y banner */
+.hero-section,
+.hero-content-text,
+.banner-content {
+  color: var(--color-text);
+}
+
+.hero-section h1,
+.hero-section h2,
+.hero-section h3,
+.banner-content h1,
+.banner-content h2,
+.banner-content p {
+  color: inherit;
+}
+
+/* Títulos de las secciones */
+.product-section,
+.product-detail-section,
+.register-page,
+.login-page,
+.admin-products-page,
+.admin-users-page {
+  color: var(--color-text);
+}
+
+.product-section h1,
+.product-section h2,
+.product-detail-section h1,
+.product-detail-section h2,
+.register-page h1,
+.login-page h1,
+.admin-products-page h1,
+.admin-users-page h1 {
+  color: var(--color-accent);
+}
+
+/* Tarjetas de productos */
+.product-card,
+.product-card-detail {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.product-card h2,
+.product-card h3,
+.product-card p,
+.product-card-detail h1,
+.product-card-detail h2,
+.product-card-detail p {
+  color: var(--color-text);
+}
+
+/* Formularios de registro y login */
+.register-container,
+.login-container {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.register-container label,
+.login-container label {
+  color: var(--color-text);
+}
+
+.register-container input,
+.login-container input {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.register-container input::placeholder,
+.login-container input::placeholder {
+  color: var(--color-text-light);
+}
+
+/* Paneles de administración */
+.admin-product-form-section,
+.admin-product-list-section,
+.admin-user-form-section,
+.admin-user-list-section {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.admin-products-page label,
+.admin-users-page label {
+  color: var(--color-text);
+}
+
+/* Campos de administración */
+.admin-products-page input,
+.admin-products-page select,
+.admin-products-page textarea,
+.admin-users-page input,
+.admin-users-page select,
+.admin-users-page textarea {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.admin-products-page input::placeholder,
+.admin-products-page textarea::placeholder,
+.admin-users-page input::placeholder,
+.admin-users-page textarea::placeholder {
+  color: var(--color-text-light);
+}
+
+/* Tablas de productos y usuarios */
+.admin-products-table,
+.admin-users-table {
+  color: var(--color-text);
+  background-color: var(--color-surface);
+}
+
+.admin-products-table th,
+.admin-users-table th {
+  background-color: var(--color-surface-hover);
+  color: var(--color-accent);
+}
+
+.admin-products-table td,
+.admin-users-table td {
+  color: var(--color-text);
+  border-bottom-color: var(--color-border);
+}
+
+/* Botones principales */
+.register-container button,
+.login-container button,
+.admin-products-page button,
+.admin-users-page button {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition);
+}
+
+.register-container button:hover,
+.login-container button:hover,
+.admin-products-page button:hover,
+.admin-users-page button:hover {
+  background-color: #6D28D9;
+}
+
+/* Errores y mensajes */
+.form-error {
+  color: #F87171;
+}
+
+.admin-success {
+  color: #86EFAC;
+}
+
+/* Enlaces dentro de tarjetas y paneles */
+.product-card a,
+.product-card-detail a,
+.register-container a,
+.login-container a {
+  color: var(--color-accent);
+}
+
+.product-card a:hover,
+.product-card-detail a:hover,
+.register-container a:hover,
+.login-container a:hover {
+  color: #C4B5FD;
 }
