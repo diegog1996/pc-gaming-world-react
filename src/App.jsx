@@ -10,6 +10,8 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import AdminProducts from './pages/AdminProducts';
 import AdminUsers from './pages/AdminUsers';
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function Home() {
   return (
@@ -68,16 +70,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetail />} />
-       <Route path="/register" element={<Register />} />
-      <Route path="/login" element={<Login />} />
-        <Route
-          path="/contact"
-          element={<NotReady title="Contacto" />}
-        />
-        <Route
-          path="/about"
-          element={<NotReady title="Sobre nosotros" />}
-        />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/admin" element={<AdminProducts />} />
         <Route path="/admin/users" element={<AdminUsers />} />
       </Routes>

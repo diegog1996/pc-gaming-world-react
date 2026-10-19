@@ -588,3 +588,145 @@ a {
   cursor: pointer;
   font: inherit;
 }
+
+
+/* Páginas Acerca de y Contacto */
+
+.info-page {
+  width: 100%;
+  min-height: 60vh;
+  color: #f5f5f5;
+  background: #101014;
+  padding-bottom: 3rem;
+}
+
+.info-page__hero {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #191923, #252039);
+}
+
+.info-page__hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.info-page__hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.info-page__hero .info-page__eyebrow {
+  margin-bottom: 0.75rem;
+  color: #a78bfa;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.info-page__content {
+  width: min(900px, 90%);
+  margin: 2.5rem auto;
+  line-height: 1.8;
+}
+
+.info-page__content h2 {
+  margin-top: 1.8rem;
+  color: #a78bfa;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  width: min(1100px, 90%);
+  margin: 2.5rem auto 0;
+  align-items: start;
+}
+
+.contact-layout .info-page__content {
+  width: 100%;
+  margin: 0;
+}
+
+.contact-form-card {
+  padding: 1.5rem;
+  border: 1px solid #373344;
+  border-radius: 12px;
+  background: #191923;
+}
+
+.contact-form-card h2 {
+  margin-top: 0;
+}
+
+.contact-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.contact-form-card label {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-form-card input,
+.contact-form-card textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #494456;
+  border-radius: 6px;
+  background: #101014;
+  color: #fff;
+  font: inherit;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+  outline: 2px solid #a78bfa;
+  outline-offset: 2px;
+}
+
+.contact-form-card textarea {
+  resize: vertical;
+}
+
+.contact-form-card button {
+  margin-top: 0.75rem;
+  padding: 0.85rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #7c3aed;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-form-card button:hover {
+  background: #6d28d9;
+}
+
+.contact-success {
+  padding: 0.8rem;
+  border-radius: 6px;
+  background: #183d2b;
+  color: #c6f6d5;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .info-page__hero {
+    padding: 3rem 1.2rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card {
+    padding: 1.2rem;
+  }
+}

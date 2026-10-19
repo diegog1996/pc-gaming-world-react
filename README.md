@@ -55,7 +55,7 @@ npm install
 Crear un archivo `.env` en la raíz del proyecto con la siguiente variable:
 
 ```env
-VITE_API_URL=https://mockapi.io/projects/6ad50ff548476c0785d9656c
+VITE_API_URL=https://TU-PROYECTO.mockapi.io/api/v1
 ```
 
 Reemplazar la URL de ejemplo por la URL base de tu proyecto de MockAPI. Esta URL debe incluir la versión de la API si corresponde, pero no debe terminar en `/products` ni en `/users`.
